@@ -1,0 +1,13 @@
+# Created by https://www.toptal.com/developers/gitignore/api/pulumi
+# Edit at https://www.toptal.com/developers/gitignore?templates=pulumi
+
+### Pulumi ###
+# Ignore temp build directory for Pulumi
+# Info: https://www.pulumi.com/docs/
+
+.pulumi/
+
+# End of https://www.toptal.com/developers/gitignore/api/pulumi
+
+
+pulumi-example

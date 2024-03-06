@@ -1,0 +1,7 @@
+nodeSelector:
+  ingress-ready: "true"
+  kubernetes.io/os: linux
+tolerations:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/control-plane
+    operator: Equal

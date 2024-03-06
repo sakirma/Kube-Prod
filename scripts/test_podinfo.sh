@@ -15,3 +15,5 @@ helm upgrade --install --wait backend \
 --namespace test \
 --set redis.enabled=true \
 podinfo/podinfo
+
+kubectl label namespaces test istio-injection=enabled

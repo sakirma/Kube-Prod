@@ -10,3 +10,7 @@ kubectl wait --namespace metallb-system \
                 --for=condition=ready pod \
                 --selector=app=metallb \
                 --timeout=90s
+
+kubectl apply -f ./metallb_config.yaml
+
+kubectl apply -f https://kind.sigs.k8s.io/examples/loadbalancer/usage.yaml

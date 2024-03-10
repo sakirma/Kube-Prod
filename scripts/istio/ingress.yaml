@@ -5,3 +5,10 @@ tolerations:
   - effect: NoSchedule
     key: node-role.kubernetes.io/control-plane
     operator: Equal
+service:
+  ports:
+    - name: http2
+      nodePort: 30080
+      port: 80
+      protocol: TCP
+      targetPort: 80

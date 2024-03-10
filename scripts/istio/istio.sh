@@ -18,9 +18,4 @@ helm upgrade --install istiod istio/istiod --wait -n istio-system \
     --set istio_cni.chained=true
 
 echo 'Installing istio ingress'
-helm upgrade --install istio-ingressgateway istio/gateway --create-namespace \
-    -n istio-ingress -f ./ingress.yaml
-
-# TODO: set a default node port for the control plane
-#   TODO: run the istio ingress deployment on the nodeport.
-#       TODO: if not installed: https://istio.io/latest/docs/examples/bookinfo/
+helm upgrade --install istio-ingressgateway istio/gateway --create-namespace -n istio-system -f ./ingress.yaml

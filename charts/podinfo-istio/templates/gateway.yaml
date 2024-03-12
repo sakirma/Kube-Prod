@@ -8,8 +8,8 @@ spec:
     app: istio-ingressgateway
   servers:
     - port:
-        number: 80
+        number: 8080
         name: http2
         protocol: HTTP2
       hosts:
-        - "*"
+        - "*.hus.nl"

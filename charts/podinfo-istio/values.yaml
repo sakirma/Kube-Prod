@@ -1,7 +1,11 @@
 frontend:
-  backend: http://podinfo-istio-backend:9898/echo
+  backend: http://podinfo-backend:9898/echo
   replicaCount: 2
 
 backend:
   redis:
     enabled: true
+
+host: "192-168-228-200.nip.io"
+
+gatewayName: "podinfo"
